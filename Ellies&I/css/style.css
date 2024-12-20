@@ -1,0 +1,140 @@
+/* Import Roboto fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FADADD; /* Baby Pink Color */
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for general text */
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.holidays {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.holidays h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.holiday-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+    margin-top: 10px;
+}
+
+.holiday-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #FF6F91; /* Nice pink color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.holiday-button:hover {
+    background-color: #FF4975; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+
+/* Photo Rows */
+.photo-row {
+    display: grid;
+    grid-gap: 15px;
+    max-width: 800px;
+}
+
+/* Top Row */
+.top-row {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Remaining Rows */
+.regular-row {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 15px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #FFC1CC; /* Light pink */
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed for footer */
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 700; /* Bold links */
+    font-family: 'Roboto Slab', serif; /* Use Roboto Slab for links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a[href^="tel"] {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a[href^="tel"]:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+
+/* Header Styling */
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    margin: 10px 0;
+}
